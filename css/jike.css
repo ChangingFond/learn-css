@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+
+.nav {
+  background-color: blue;
+  height: 50px;
+  /*左右自适应，居中*/
+  margin: 0 auto;
+  width: 75%;
+}
+
+.body {
+  margin: 20px auto;
+  width: 75%;
+  height: 1500px;
+  background-color: grey;
+}
+
+.body_img {
+  width: 100%;
+  height: 400px;
+  background-color: green;
+}
+
+.body_content {
+  background-color: pink;
+  height: 1100px;
+  width: 100%;
+}
+
+.body_no {
+  background-color: yellow;
+  height: 50px;
+  width: 100%;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 75%;
+  height: 400px;
+  background-color: #444444;
+}
+
+.footer_content {
+  width: 100%;
+  height: 320px;
+  background-color: #222111;
+}
+
+.footer_menu {
+  width: 100%;
+  height: 80px;
+  background-color: #333222;
+}

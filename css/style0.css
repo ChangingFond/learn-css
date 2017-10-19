@@ -1,0 +1,70 @@
+#position1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /*position: absolute; /*脱离文档流*/
+  /*position: fixed; 不随页面滚动*/
+  /*position: static; 偏移量不起效果*/
+  position: relative;
+  left: 20px;
+  top: 20px;
+  z-index: 2; /*谁大谁在上面*/
+}
+#position2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  /*position: absolute; /*脱离文档流*/
+  /*position: fixed; 不随页面滚动*/
+  /*position: static; 偏移量不起效果*/
+  position: relative;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+.mg {
+  background-color: green;
+  height: 100px;
+  margin: 100px;
+  width: 100px;
+}
+.container {
+  margin: 200px;
+}
+.bd {
+  border-style: dotted;
+}
+.pd {
+  padding: 100px
+}
+.content {
+  background-color: red;
+}
+
+.container1 {
+  margin: 100px;
+}
+.bd1 {
+  border-style: dotted;
+}
+.pd1 {
+  padding: 100px
+}
+.content1 {
+  background-color: red;
+}
+td {
+  /*padding: 100px;*/
+  padding-left: 100px;
+  padding-right: 100px;
+}
+p {
+  /*全边框与单边框*/
+  background-color: red;
+  border: 2px solid blue;
+  border-style: dotted;
+  border-color: green;
+  border-width: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
