@@ -1,3 +1,6 @@
+h1  {
+  color: red;
+}
 #position1 {
   width: 100px;
   height: 100px;
@@ -14,16 +17,18 @@
   width: 100px;
   height: 100px;
   background-color: green;
-  /*position: absolute; /*脱离文档流*/
-  /*position: fixed; 不随页面滚动*/
+  /*position: absolute; /*脱离文档流，参考父级指定位置的元素，该父级元素设置position属性*/
+  /*position: fixed; 和relative相同，但不随页面滚动*/
   /*position: static; 偏移量不起效果*/
-  position: relative;
+  position: relative; /*相对于原来的位置(static)偏移*/
   left: 10px;
   top: 10px;
   z-index: 1;
 }
 .mg {
+  outline: 10px solid blue;
   background-color: green;
+  border: 1px solid red;
   height: 100px;
   margin: 100px;
   width: 100px;
@@ -58,7 +63,7 @@ td {
   padding-left: 100px;
   padding-right: 100px;
 }
-p {
+p.p {
   /*全边框与单边框*/
   background-color: red;
   border: 2px solid blue;
@@ -67,4 +72,44 @@ p {
   border-width: 12px;
   border-radius: 12px;
   text-align: center;
+}
+.overflow {
+  border: 1px solid red;
+  background-color: #eee;
+  width: 200px;
+  height: 100px;
+  /*overflow: hidden;*/
+  /*overflow: scroll;*/
+  overflow: auto; /*该元素内包含有宽度大于该元素的元素，x轴也会显示滚动条*/
+  /*overflow-x: auto;*/
+  /*overflow-y: auto;*/
+}
+.float1 {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  float: left; /*脱离文本流，影响下一元素*/
+}
+.float2 {
+  background-color: red;
+  height: 100px;
+  /*clear: left; 清除上一元素的float影响*/
+}
+.float3 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  /*overflow: auto; /*防止子元素溢出*/*/
+}
+.float4 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  float: right;
+  /*该元素高度大于父级元素，会溢出*/
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
 }

@@ -7,23 +7,30 @@
 		<!-- Mobile Metas -->
 	  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 		<!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
-		<link href="css/style0.css" type="text/css" rel="stylesheet" />
+
 		<!-- 内联样式表 -->
-		<style>
-			h1{
-				color: sienna;
-			}
-		</style>
+    <style>
+      h1 {
+        color: sienna;
+      }
+      .align {
+        border: 1px solid red;
+        padding: 100px;
+        clear: right;
+      }
+    </style>
+    <link href="css/style0.css" type="text/css" rel="stylesheet" />
 	</head>
   <body>
-    <!-- <div id="position1"></div>
-    <div id="position2"></div> -->
+    <h1>Test</h1>
+    <div id="position1"></div>
+    <div id="position2"></div>
     <table border="1">
       <tr>
         <td>内边距</td>
       </tr>
     </table>
-    <p>CSS样式</p>
+    <p class="p">CSS样式</p>
     <div class="mg">
       外边距
     </div>
@@ -47,9 +54,33 @@
         </div>
       </div>
     </div>
-    <div class="test">
-      11
+    <div class="overflow">
+      overflow是控制元素内容溢出的情况
+      overflow是控制元素内容溢出的情况
+      overflow是控制元素内容溢出的情况
+      overflow是控制元素内容溢出的情况
+      overflow是控制元素内容溢出的情况
     </div>
+
+    <div class="float1">
+      float 1 content
+    </div>
+    <div class="float2">
+      float 2 content
+    </div>
+
+    <h1>overflow: auto</h1>
+    <div class="float3 clearfix">
+      float 3 content
+      <div class="float4">
+        float 4 content
+      </div>
+    </div>
+
+    <div class="align">
+      <p>段落内容如何垂直居中</p>
+    </div>
+
     <!-- <script type="text/javascript">
       for(var i = 0; i<100; i++) {
         document.write(i+'<br />');
