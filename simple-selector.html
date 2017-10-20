@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple selector</title>
+  <style media="screen">
+    p {
+      background-color: yellow;
+    }
+    .p1 {
+      background-color: green;
+    }
+    #p2 {
+      background-color: blue;
+    }
+    /*优先级：id选择器 > class选择器 > 元素选择器*/
+    #p3 {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>This is p element.</p>
+  <p class="p1">This is p1 element.</p>
+  <p id="p2">This is p2 element.</p>
+  <p id="p3" class="p1">This is p3 element.</p>
+</body>
+</html>
