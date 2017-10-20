@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Combination selector</title>
+  <style media="screen">
+    /*后代选择器 —— 所有的后代*/
+    div p {
+      color: blue;
+    }
+    /*子代选择器 —— 直接的后代*/
+    div > p {
+      color: red;
+    }
+    /*相邻选择器 —— 下一个兄弟元素*/
+    div + p {
+      color: green;
+    }
+    /*一般兄弟选择器 —— 与该元素同一级别的所有兄弟元素*/
+    div ~ p {
+      background-color: #eeeeee;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>This is p1 element</p>
+    <p>This is p2 element</p>
+    <span><p>This is p3 element</p></span>
+  </div>
+  <p>This is p4 element</p>
+  <p>This is p5 element</p>
+</body>
+</html>
