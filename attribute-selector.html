@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Attribute selector</title>
+  <style media="screen">
+    p[title] {
+      color: green;
+    }
+    p[title="p1"] {
+      color: red;
+    }
+    /* 包含p5单词（空格隔开）*/
+    p[title~="p5"] {
+      color: yellow;
+    }
+    /* 包含p2字符串 */
+    p[title*="p2"] {
+      color: orange;
+    }
+    /* 以top字符串开头，以短线隔开 */
+    p[title|="top"] {
+      color: grey;
+    }
+    /* 以top字符串开头 */
+    p[title^="top"] {
+      color: blue;
+    }
+    /* 以top字符串结束 */
+    p[title$="top"] {
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+  <h1>元素具有attribute属性</h1>
+  <p title="p1">段落内容1</p>
+  <p title="p2">段落内容2</p>
+  <p title="top-p3">段落内容3</p>
+  <p title="p4">段落内容4</p>
+  <p title="top p5">段落内容5</p>
+</body>
+</html>
