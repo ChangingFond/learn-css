@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box sizing</title>
+  <style media="screen">
+    * {
+      /*全局设置*/
+      box-sizing: border-box;
+    }
+    .div1 {
+      border: 3px solid green;
+      width: 300px;
+      height: 200px;
+      box-sizing: border-box;
+    }
+    .div2 {
+      border: 3px solid red;
+      width: 300px;
+      height: 200px;
+      padding: 50px;
+      /* border-box宽度包括padding和border,不包括margin */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">
+    width: 300px;
+    height: 200px;
+  </div>
+  <br>
+  <div class="div2">
+    width: 300px;
+    height: 200px;
+    padding: 50px;
+  </div>
+</body>
+</html>
