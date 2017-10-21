@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive layout</title>
+  <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+  <style media="screen">
+    * {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    /* 清除float对前后元素的影响 */
+    .row::after, .row::before {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .box {
+      width: 25%;
+      height: 200px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 200px;
+      float: left;
+    }
+    .orange {
+      background-color: orange;
+    }
+    .green {
+      background-color: green;
+    }
+    .red {
+      background-color: red;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    @media only screen and (max-width: 600px) {
+      .box {
+        width: 100%;
+      }
+    }
+    @media only screen and (min-width: 601px) and (max-width: 768px){
+      .box {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="box orange">
+      1
+    </div>
+    <div class="box green">
+      2
+    </div>
+    <div class="box red">
+      3
+    </div>
+    <div class="box yellow">
+      4
+    </div>
+  </div>
+</body>
+</html>
