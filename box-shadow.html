@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box shadow</title>
+  <style media="screen">
+    .box {
+      background: green;
+      width: 100px;
+      height: 100px;
+      /* 多个box-shadow可以用逗号分割 */
+      /*box-shadow: inset（内阴影） *横向偏移量（+右-左） *纵向偏移量（+下-上） 模糊范围 扩展范围 阴影颜色（默认黑色）*/
+      box-shadow: inset 2px 2px 5px 5px orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
