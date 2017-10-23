@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Border radius</title>
+  <style media="screen">
+    .box-1 {
+      background: grey;
+      width: 200px;
+      height: 200px;
+      /* 圆角半径分别是height和width的50% */
+      border-radius: 50%;
+    }
+    .box-2 {
+      background: grey;
+      width: 200px;
+      height: 200px;
+      /*横轴半径和纵轴半径，椭圆圆角*/
+      border-radius: 50px/15px;
+    }
+    .box-3 {
+      background: grey;
+      width: 200px;
+      height: 200px;
+      border-radius: 5px 10px 15px 20px;
+    }
+    .box-4 {
+      background: grey;
+      width: 200px;
+      height: 200px;
+      /*顺时针旋转*/
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-1"></div>
+  <div class="box-2"></div>
+  <div class="box-3"></div>
+  <div class="box-4"></div>
+</body>
+</html>
