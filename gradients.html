@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>gradients</title>
+  <style media="screen">
+    /*线性渐变*/
+    .box {
+      width: 200px;
+      height: 200px;
+      /*linear-gradient(方向/角度， 颜色1， 颜色2， ……)*/
+      background: linear-gradient(0deg, red, yellow, blue);
+    }
+    /*径向渐变*/
+    .box-1 {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      /*radial-gradient(形状 大小 at 位置， 颜色1， 颜色2，……)*/
+      /*background: radial-gradient(20px, red, yellow, blue);*/
+      background: radial-gradient(at left top, red, blue);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+
+  </div>
+  <div class="box-1">
+
+  </div>
+</body>
+</html>
