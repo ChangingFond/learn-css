@@ -10,7 +10,17 @@
       width: 100px;
       height: 100px;
       background-color: lightblue;
-      /*关键帧名 动画时间 动画轨迹 动画延迟时间 循环次数(infinite) 动画执行方向(alternate)*/
+      /*
+        关键帧名*
+        动画时间*
+        动画轨迹
+        动画延迟时间
+        循环次数(infinite)
+        动画执行方向(reverse-反向,alternate-循环,alternate-reverse-反向循环)
+        动画停留位置(none,backwards-开始停留在第一个关键帧,forwards-结束停留在最后一个关键帧,both)
+        动画状态(running paused)
+      */
+      /*动画效果可以叠加*/
       animation: example 5s 1s ease infinite alternate;
       -webkit-animation: example 5s 1s ease infinite alternate;
       -moz-animation: example 5s 1s ease infinite alternate;
