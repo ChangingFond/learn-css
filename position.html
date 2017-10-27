@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>position</title>
+  <style media="screen">
+    /*以页面上某一元素为参照物，移动当前元素*/
+    /*absolute relative static fixed*/
+    .div1 {
+      margin: 0 auto;
+      border: 1px solid red;
+      width: 400px;
+      height: 400px;
+      /*position: relative;*/
+    }
+    .div2 {
+      border: 1px solid red;
+      width: 100px;
+      height: 100px;
+      /* relative相对于元素之前的默认位置，对于后面元素位置无影响(后面元素保持原来的位置) */
+      position: relative;
+      left: 50px;
+      top: 50px;
+    }
+    .div3 {
+      border: 1px solid red;
+      width: 100px;
+      height: 100px;
+      /* absolute默认情况下相对于body偏移，如果父元素设置定义了position(absolute/relative)，则相对于父元素偏移 */
+      /*position: absolute;
+      left: 50px;
+      top: 50px;*/
+    }
+
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <div class="div2">2222</div>
+    <div class="div3">3333</div>
+  </div>
+</body>
+</html>
