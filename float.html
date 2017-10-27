@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>float</title>
+  <style media="screen">
+    /* 元素脱离文档流，但其他盒子内的文本依然会为这个元素让出位置，环绕在周围 */
+    .div1 {
+      width: 100px;
+      height: 100px;
+      border: 3px solid red;
+      float: left;
+    }
+    .div2 {
+      width: 100px;
+      height: 100px;
+      border: 4px solid green;
+      /*float: left;*/
+    }
+    .div3 {
+      width: 100px;
+      height: 100px;
+      border: 5px solid black;
+      /*clear: both;*/
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      border: 1px solid orange;
+      width: 120px;
+      text-align: center;
+      height: 35px;
+      line-height: 35px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">001</div>
+  <div class="div2">002</div>
+  <div class="div3">003</div>
+  <br>
+  <ul>
+    <li>001</li>
+    <li>002</li>
+    <li>003</li>
+    <li>004</li>
+    <li>005</li>
+  </ul>
+</body>
+</html>
